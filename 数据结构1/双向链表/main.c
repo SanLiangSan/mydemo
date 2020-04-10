@@ -27,7 +27,7 @@ typedef struct Node {
 
 // 初始化
 Node * InitList(int total)  {
-    //创建头节点 0x000000010064a390
+    //创建头节点 
     Node *list = (Node *)malloc(sizeof(Node));
     if (list == NULL) return ERROR;
     list->prior = NULL;

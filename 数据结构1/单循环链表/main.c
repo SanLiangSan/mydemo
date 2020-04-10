@@ -49,7 +49,7 @@ Status InitList(LinkList *L) {
 //            temp->data = number;
 //            temp->next = *L;
 //            tail->next = temp;
-            if (tail == NULL) return ERROR;
+//            if (tail == NULL) return ERROR;
             //方法2
             Node *node = (Node *)malloc(sizeof(Node));
             if (!node) return ERROR;
@@ -111,9 +111,6 @@ void InsertNode(LinkList *List,int location, ListData data) {
     } else {
         Node *preNode = *List;
         // 找到插入位置的的前一个节点
-//        for (int i = 1; i < location-1 && preNode->next != *List ; i ++) {
-//            preNode = preNode->next;
-//        }
         for (int i = 1; preNode->next != *List && i != location-1; preNode = preNode->next,i++);
         insertNode->next = preNode->next;
         preNode->next = insertNode;

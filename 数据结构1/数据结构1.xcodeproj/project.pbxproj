@@ -8,12 +8,22 @@
 
 /* Begin PBXBuildFile section */
 		6706BEDB243CB68500B085F3 /* main.c in Sources */ = {isa = PBXBuildFile; fileRef = 6706BEDA243CB68500B085F3 /* main.c */; };
+		6706BEE6243CD93E00B085F3 /* main.c in Sources */ = {isa = PBXBuildFile; fileRef = 6706BEE5243CD93E00B085F3 /* main.c */; };
 		675AEC8724337978004EEB24 /* main.c in Sources */ = {isa = PBXBuildFile; fileRef = 675AEC8624337978004EEB24 /* main.c */; };
 		67AD03DD243AEACF00451E87 /* main.c in Sources */ = {isa = PBXBuildFile; fileRef = 67AD03DC243AEACF00451E87 /* main.c */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
 		6706BED6243CB68500B085F3 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+		6706BEE1243CD93E00B085F3 /* CopyFiles */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
 			dstPath = /usr/share/man/man1/;
@@ -45,6 +55,8 @@
 /* Begin PBXFileReference section */
 		6706BED8243CB68500B085F3 /* 双向链表 */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "双向链表"; sourceTree = BUILT_PRODUCTS_DIR; };
 		6706BEDA243CB68500B085F3 /* main.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = main.c; sourceTree = "<group>"; };
+		6706BEE3243CD93E00B085F3 /* 双向循环链表 */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "双向循环链表"; sourceTree = BUILT_PRODUCTS_DIR; };
+		6706BEE5243CD93E00B085F3 /* main.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = main.c; sourceTree = "<group>"; };
 		675AEC8324337978004EEB24 /* 数据结构1 */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "数据结构1"; sourceTree = BUILT_PRODUCTS_DIR; };
 		675AEC8624337978004EEB24 /* main.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = main.c; sourceTree = "<group>"; };
 		67AD03DA243AEACF00451E87 /* 单循环链表 */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "单循环链表"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -53,6 +65,13 @@
 
 /* Begin PBXFrameworksBuildPhase section */
 		6706BED5243CB68500B085F3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6706BEE0243CD93E00B085F3 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -84,12 +103,21 @@
 			path = "双向链表";
 			sourceTree = "<group>";
 		};
+		6706BEE4243CD93E00B085F3 /* 双向循环链表 */ = {
+			isa = PBXGroup;
+			children = (
+				6706BEE5243CD93E00B085F3 /* main.c */,
+			);
+			path = "双向循环链表";
+			sourceTree = "<group>";
+		};
 		675AEC7A24337978004EEB24 = {
 			isa = PBXGroup;
 			children = (
 				675AEC8524337978004EEB24 /* 数据结构1 */,
 				67AD03DB243AEACF00451E87 /* 单循环链表 */,
 				6706BED9243CB68500B085F3 /* 双向链表 */,
+				6706BEE4243CD93E00B085F3 /* 双向循环链表 */,
 				675AEC8424337978004EEB24 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -100,6 +128,7 @@
 				675AEC8324337978004EEB24 /* 数据结构1 */,
 				67AD03DA243AEACF00451E87 /* 单循环链表 */,
 				6706BED8243CB68500B085F3 /* 双向链表 */,
+				6706BEE3243CD93E00B085F3 /* 双向循环链表 */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -138,6 +167,23 @@
 			name = "双向链表";
 			productName = "双向链表";
 			productReference = 6706BED8243CB68500B085F3 /* 双向链表 */;
+			productType = "com.apple.product-type.tool";
+		};
+		6706BEE2243CD93E00B085F3 /* 双向循环链表 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6706BEE7243CD93E00B085F3 /* Build configuration list for PBXNativeTarget "双向循环链表" */;
+			buildPhases = (
+				6706BEDF243CD93E00B085F3 /* Sources */,
+				6706BEE0243CD93E00B085F3 /* Frameworks */,
+				6706BEE1243CD93E00B085F3 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "双向循环链表";
+			productName = "双向循环链表";
+			productReference = 6706BEE3243CD93E00B085F3 /* 双向循环链表 */;
 			productType = "com.apple.product-type.tool";
 		};
 		675AEC8224337978004EEB24 /* 数据结构1 */ = {
@@ -186,6 +232,9 @@
 					6706BED7243CB68500B085F3 = {
 						CreatedOnToolsVersion = 10.3;
 					};
+					6706BEE2243CD93E00B085F3 = {
+						CreatedOnToolsVersion = 10.3;
+					};
 					675AEC8224337978004EEB24 = {
 						CreatedOnToolsVersion = 10.3;
 					};
@@ -209,6 +258,7 @@
 				675AEC8224337978004EEB24 /* 数据结构1 */,
 				67AD03D9243AEACF00451E87 /* 单循环链表 */,
 				6706BED7243CB68500B085F3 /* 双向链表 */,
+				6706BEE2243CD93E00B085F3 /* 双向循环链表 */,
 			);
 		};
 /* End PBXProject section */
@@ -219,6 +269,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				6706BEDB243CB68500B085F3 /* main.c in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6706BEDF243CD93E00B085F3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6706BEE6243CD93E00B085F3 /* main.c in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -250,6 +308,22 @@
 			name = Debug;
 		};
 		6706BEDE243CB68500B085F3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		6706BEE8243CD93E00B085F3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		6706BEE9243CD93E00B085F3 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
@@ -408,6 +482,15 @@
 			buildConfigurations = (
 				6706BEDD243CB68500B085F3 /* Debug */,
 				6706BEDE243CB68500B085F3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6706BEE7243CD93E00B085F3 /* Build configuration list for PBXNativeTarget "双向循环链表" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6706BEE8243CD93E00B085F3 /* Debug */,
+				6706BEE9243CD93E00B085F3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
