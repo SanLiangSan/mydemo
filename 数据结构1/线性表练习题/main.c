@@ -319,6 +319,36 @@ void LeftShift(int *pre,int n,int p){
  空间复杂度: O(1)
  */
 
+int MainElement(int *A,int n) {
+    int count = 1;
+    int key = A[0];
+    
+    for (int i = 1; i < n; i ++) {
+        int temp = A[i];
+        if (temp == key) {
+            count ++;
+        } else {
+            if (count > 0) {
+                count --;
+            } else {
+                key = temp;
+                count = 1;
+            }
+        }
+    }
+    
+    int keyNum = 0;
+    if (count > 0) {
+        for (int i = 0; i < n; i ++) {
+            if (A[i] == key) {
+                keyNum++;
+            }
+        }
+    }
+    
+    return keyNum > n/2 ? key:-1;
+}
+
 
 /*
  题目7:
@@ -431,12 +461,16 @@ int main(int argc, const char * argv[]) {
 //    ListTraverse(la);
     
     // 题目 5
-    int array[] = {1,2,3,4,5,6};
-    LeftShift(array, 6, 2);
-    for (int i = 0; i < sizeof(array)/sizeof(array[0]); i++) {
-        printf("%d-",array[i]);
-    }
-    printf("\n");
+//    int array[] = {1,2,3,4,5,6};
+//    LeftShift(array, 6, 2);
+//    for (int i = 0; i < sizeof(array)/sizeof(array[0]); i++) {
+//        printf("%d-",array[i]);
+//    }
+//    printf("\n");
+    
+    int array[] = {0,5,0,5,4,3,6,7,8,9,1,0,3,0,6};
+    int key = MainElement(array, sizeof(array)/sizeof(array[0]));
+    printf("main key is %d \n",key);
     
     return 0;
 }
