@@ -29,15 +29,25 @@
 			<key>orderHint</key>
 			<integer>0</integer>
 		</dict>
-		<key>栈顺序存储实现.xcscheme_^#shared#^_</key>
+		<key>栈.xcscheme_^#shared#^_</key>
 		<dict>
 			<key>orderHint</key>
 			<integer>4</integer>
 		</dict>
-		<key>线性表练习题.xcscheme_^#shared#^_</key>
+		<key>栈顺序存储实现.xcscheme_^#shared#^_</key>
 		<dict>
 			<key>orderHint</key>
 			<integer>5</integer>
+		</dict>
+		<key>线性表练习题.xcscheme_^#shared#^_</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>6</integer>
+		</dict>
+		<key>链式栈.xcscheme_^#shared#^_</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>7</integer>
 		</dict>
 	</dict>
 </dict>
