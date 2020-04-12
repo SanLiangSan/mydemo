@@ -109,13 +109,14 @@ int main(int argc, const char * argv[]) {
     Node *list = InitList(3);
     printf("打印双向链表: \n");
     PrintList(list);
+    
     InserListData(&list,2,998);
-    printf("打印双向链表: \n");
+    printf("第2个位置插入998之后打印: \n");
     PrintList(list);
     
     ListData data;
     Status status = DeleteData(&list, 2,&data);
-    printf("打印双向链表: \n");
+    printf("删除第二个位置的节点之后打印: \n");
     PrintList(list);
     if (status == SUCCESS) {
         printf("被删除的数字是: %d\n",data);
