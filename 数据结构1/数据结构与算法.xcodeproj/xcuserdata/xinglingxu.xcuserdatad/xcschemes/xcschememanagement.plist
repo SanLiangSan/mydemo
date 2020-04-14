@@ -44,10 +44,20 @@
 			<key>orderHint</key>
 			<integer>5</integer>
 		</dict>
-		<key>链式栈.xcscheme_^#shared#^_</key>
+		<key>线性队列.xcscheme_^#shared#^_</key>
 		<dict>
 			<key>orderHint</key>
 			<integer>7</integer>
+		</dict>
+		<key>链式栈.xcscheme_^#shared#^_</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>8</integer>
+		</dict>
+		<key>链式队列.xcscheme_^#shared#^_</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>9</integer>
 		</dict>
 	</dict>
 </dict>
