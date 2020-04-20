@@ -101,6 +101,17 @@ Status clearList(LinkList *L) {
 }
 
 
+Node *reverseList(Node *head) {
+    if (head == NULL || head->next == NULL) {
+        return head;
+    }
+    Node *nowHead = reverseList(head->next);
+    head->next->next = head;
+    head->next = NULL;
+    return nowHead;
+}
+
+
 Status InitFromHead(LinkList *L,int n) {
     *L = (LinkList)malloc(sizeof(Node));
     if (*L == NULL) return ERROR;
@@ -162,37 +173,40 @@ int main(int argc, const char * argv[]) {
     Status status = InitList(&L);
     printf("s is %d\n",status);
     // 插入元素
-    for (int i = 10; i >= 1; i --) {
+    for (int i = 5; i >= 1; i --) {
         InsertNode(&L, 1, i);// 此处1表示，总是从头节点后面插入新节点，也就是头插法，比较简单，因为尾插法还要保留链表长度
     }
-    // 打印链表
-    printf("链表是 :\n");
-    printList(L);
-    // 删除第五个节点
-    ListData data;
-    DeleteNode(&L, 5, &data);
-    printf("删除第五个元素后的链表是 :\n");
-    printList(L);
-    printf("被删除的值是 %d\n",data);
     
-    clearList(&L);
-    for (int i = 0; i < 20; i ++) {
-        AddNodeToTheTail(&L, i);
-    }
-    printf("链表是 :\n");
-    printList(L);
-    
-    clearList(&L);
-    InitFromHead(&L, 30);
-    printf("链表是 :\n");
-    printList(L);
-    
-    
-    
-    clearList(&L);
-    InitFromTail(&L, 30);
-    printf("链表是 :\n");
-    printList(L);
+    Node *reverse = reverseList(L);
+    printList(reverse);
+//    // 打印链表
+//    printf("链表是 :\n");
+//    printList(L);
+//    // 删除第五个节点
+//    ListData data;
+//    DeleteNode(&L, 5, &data);
+//    printf("删除第五个元素后的链表是 :\n");
+//    printList(L);
+//    printf("被删除的值是 %d\n",data);
+//
+//    clearList(&L);
+//    for (int i = 0; i < 20; i ++) {
+//        AddNodeToTheTail(&L, i);
+//    }
+//    printf("链表是 :\n");
+//    printList(L);
+//
+//    clearList(&L);
+//    InitFromHead(&L, 30);
+//    printf("链表是 :\n");
+//    printList(L);
+//
+//
+//
+//    clearList(&L);
+//    InitFromTail(&L, 30);
+//    printf("链表是 :\n");
+//    printList(L);
     
     return 0;
 }

@@ -100,6 +100,7 @@ int main(int argc, const char * argv[]) {
     // insert code here...
     Stack S;
     InitStack(&S);
+    PrintStack(S);
     if (InitStack(&S) == SUCCESS) {
         for (int i = 1; i < 10; i++) {
             PushData(&S, i);
