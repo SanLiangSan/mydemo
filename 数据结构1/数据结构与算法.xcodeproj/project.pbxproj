@@ -18,6 +18,7 @@
 		67A8B0FB2445E4EE00A44321 /* main.c in Sources */ = {isa = PBXBuildFile; fileRef = 67A8B0FA2445E4EE00A44321 /* main.c */; };
 		67A8B1062445E4F400A44321 /* main.c in Sources */ = {isa = PBXBuildFile; fileRef = 67A8B1052445E4F400A44321 /* main.c */; };
 		67AD03DD243AEACF00451E87 /* main.c in Sources */ = {isa = PBXBuildFile; fileRef = 67AD03DC243AEACF00451E87 /* main.c */; };
+		67D448D4244F3B380084F9DC /* main.c in Sources */ = {isa = PBXBuildFile; fileRef = 67D448D3244F3B380084F9DC /* main.c */; };
 		67EA788224409EC900230FF8 /* main.c in Sources */ = {isa = PBXBuildFile; fileRef = 67EA788124409EC900230FF8 /* main.c */; };
 /* End PBXBuildFile section */
 
@@ -130,6 +131,15 @@
 			);
 			runOnlyForDeploymentPostprocessing = 1;
 		};
+		67D448CF244F3B380084F9DC /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
 		67EA787D24409EC900230FF8 /* CopyFiles */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
@@ -165,6 +175,8 @@
 		67A8B1052445E4F400A44321 /* main.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = main.c; sourceTree = "<group>"; };
 		67AD03DA243AEACF00451E87 /* 单循环链表 */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "单循环链表"; sourceTree = BUILT_PRODUCTS_DIR; };
 		67AD03DC243AEACF00451E87 /* main.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = main.c; sourceTree = "<group>"; };
+		67D448D1244F3B380084F9DC /* 字符串匹配 */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "字符串匹配"; sourceTree = BUILT_PRODUCTS_DIR; };
+		67D448D3244F3B380084F9DC /* main.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = main.c; sourceTree = "<group>"; };
 		67EA787F24409EC900230FF8 /* 栈顺序存储实现 */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "栈顺序存储实现"; sourceTree = BUILT_PRODUCTS_DIR; };
 		67EA788124409EC900230FF8 /* main.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = main.c; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -254,6 +266,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		67D448CE244F3B380084F9DC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		67EA787C24409EC900230FF8 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -295,6 +314,7 @@
 				67A8B1042445E4F400A44321 /* 链式队列 */,
 				675D7F322447428300F77772 /* 算法题 */,
 				6766CEC6244DFC0600DFBEA1 /* 去除重复字母 */,
+				67D448D2244F3B380084F9DC /* 字符串匹配 */,
 				675AEC8424337978004EEB24 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -315,6 +335,7 @@
 				675D7F26244741B400F77772 /* 算法题-栈 */,
 				675D7F312447428300F77772 /* 算法题 */,
 				6766CEC5244DFC0600DFBEA1 /* 去除重复字母 */,
+				67D448D1244F3B380084F9DC /* 字符串匹配 */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -389,6 +410,14 @@
 				67AD03DC243AEACF00451E87 /* main.c */,
 			);
 			path = "单循环链表";
+			sourceTree = "<group>";
+		};
+		67D448D2244F3B380084F9DC /* 字符串匹配 */ = {
+			isa = PBXGroup;
+			children = (
+				67D448D3244F3B380084F9DC /* main.c */,
+			);
+			path = "字符串匹配";
 			sourceTree = "<group>";
 		};
 		67EA788024409EC900230FF8 /* 栈顺序存储实现 */ = {
@@ -606,6 +635,23 @@
 			productReference = 67AD03DA243AEACF00451E87 /* 单循环链表 */;
 			productType = "com.apple.product-type.tool";
 		};
+		67D448D0244F3B380084F9DC /* 字符串匹配 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 67D448D7244F3B380084F9DC /* Build configuration list for PBXNativeTarget "字符串匹配" */;
+			buildPhases = (
+				67D448CD244F3B380084F9DC /* Sources */,
+				67D448CE244F3B380084F9DC /* Frameworks */,
+				67D448CF244F3B380084F9DC /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "字符串匹配";
+			productName = "字符串匹配";
+			productReference = 67D448D1244F3B380084F9DC /* 字符串匹配 */;
+			productType = "com.apple.product-type.tool";
+		};
 		67EA787E24409EC900230FF8 /* 栈顺序存储实现 */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 67EA788524409EC900230FF8 /* Build configuration list for PBXNativeTarget "栈顺序存储实现" */;
@@ -668,6 +714,9 @@
 					67AD03D9243AEACF00451E87 = {
 						CreatedOnToolsVersion = 10.3;
 					};
+					67D448D0244F3B380084F9DC = {
+						CreatedOnToolsVersion = 10.3;
+					};
 					67EA787E24409EC900230FF8 = {
 						CreatedOnToolsVersion = 10.3;
 					};
@@ -698,6 +747,7 @@
 				675D7F25244741B400F77772 /* 算法题-栈 */,
 				675D7F302447428300F77772 /* 算法题 */,
 				6766CEC4244DFC0600DFBEA1 /* 去除重复字母 */,
+				67D448D0244F3B380084F9DC /* 字符串匹配 */,
 			);
 		};
 /* End PBXProject section */
@@ -795,6 +845,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				67AD03DD243AEACF00451E87 /* main.c in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		67D448CD244F3B380084F9DC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				67D448D4244F3B380084F9DC /* main.c in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1112,6 +1170,22 @@
 			};
 			name = Release;
 		};
+		67D448D5244F3B380084F9DC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		67D448D6244F3B380084F9DC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
 		67EA788324409EC900230FF8 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -1244,6 +1318,15 @@
 			buildConfigurations = (
 				67AD03DF243AEACF00451E87 /* Debug */,
 				67AD03E0243AEACF00451E87 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		67D448D7244F3B380084F9DC /* Build configuration list for PBXNativeTarget "字符串匹配" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				67D448D5244F3B380084F9DC /* Debug */,
+				67D448D6244F3B380084F9DC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

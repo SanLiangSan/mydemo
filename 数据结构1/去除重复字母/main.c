@@ -64,10 +64,11 @@ char *MinString(char *string) {
     stack[++top] = '\0';
     return stack;
 }
+
 int main(int argc, const char * argv[]) {
     // insert code here...
     printf("Hello, World!\n");
-    char *string = "gbsacabcgc";
+    char *string = "badabasdfk";
     char *min = MinString(string);
     printf("min string is %s \n",min);
     return 0;
