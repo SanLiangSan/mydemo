@@ -14,6 +14,7 @@
 		675CBA222442F93200334C5F /* main.c in Sources */ = {isa = PBXBuildFile; fileRef = 675CBA212442F93200334C5F /* main.c */; };
 		675D7F342447428300F77772 /* main.c in Sources */ = {isa = PBXBuildFile; fileRef = 675D7F332447428300F77772 /* main.c */; };
 		6766CEC8244DFC0600DFBEA1 /* main.c in Sources */ = {isa = PBXBuildFile; fileRef = 6766CEC7244DFC0600DFBEA1 /* main.c */; };
+		679B225B2450FCF9007653BD /* main.c in Sources */ = {isa = PBXBuildFile; fileRef = 679B225A2450FCF9007653BD /* main.c */; };
 		67A59B762441A4820015AE7E /* main.c in Sources */ = {isa = PBXBuildFile; fileRef = 67A59B752441A4820015AE7E /* main.c */; };
 		67A8B0FB2445E4EE00A44321 /* main.c in Sources */ = {isa = PBXBuildFile; fileRef = 67A8B0FA2445E4EE00A44321 /* main.c */; };
 		67A8B1062445E4F400A44321 /* main.c in Sources */ = {isa = PBXBuildFile; fileRef = 67A8B1052445E4F400A44321 /* main.c */; };
@@ -95,6 +96,15 @@
 			);
 			runOnlyForDeploymentPostprocessing = 1;
 		};
+		679B22562450FCF9007653BD /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
 		67A59B712441A4820015AE7E /* CopyFiles */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
@@ -167,6 +177,8 @@
 		675D7F332447428300F77772 /* main.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = main.c; sourceTree = "<group>"; };
 		6766CEC5244DFC0600DFBEA1 /* 去除重复字母 */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "去除重复字母"; sourceTree = BUILT_PRODUCTS_DIR; };
 		6766CEC7244DFC0600DFBEA1 /* main.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = main.c; sourceTree = "<group>"; };
+		679B22582450FCF9007653BD /* KMP算法 */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "KMP算法"; sourceTree = BUILT_PRODUCTS_DIR; };
+		679B225A2450FCF9007653BD /* main.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = main.c; sourceTree = "<group>"; };
 		67A59B732441A4820015AE7E /* 线性表练习题 */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "线性表练习题"; sourceTree = BUILT_PRODUCTS_DIR; };
 		67A59B752441A4820015AE7E /* main.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = main.c; sourceTree = "<group>"; };
 		67A8B0F82445E4EE00A44321 /* 线性队列 */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "线性队列"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -232,6 +244,13 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		6766CEC2244DFC0600DFBEA1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		679B22552450FCF9007653BD /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -315,6 +334,7 @@
 				675D7F322447428300F77772 /* 算法题 */,
 				6766CEC6244DFC0600DFBEA1 /* 去除重复字母 */,
 				67D448D2244F3B380084F9DC /* 字符串匹配 */,
+				679B22592450FCF9007653BD /* KMP算法 */,
 				675AEC8424337978004EEB24 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -336,6 +356,7 @@
 				675D7F312447428300F77772 /* 算法题 */,
 				6766CEC5244DFC0600DFBEA1 /* 去除重复字母 */,
 				67D448D1244F3B380084F9DC /* 字符串匹配 */,
+				679B22582450FCF9007653BD /* KMP算法 */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -378,6 +399,14 @@
 				6766CEC7244DFC0600DFBEA1 /* main.c */,
 			);
 			path = "去除重复字母";
+			sourceTree = "<group>";
+		};
+		679B22592450FCF9007653BD /* KMP算法 */ = {
+			isa = PBXGroup;
+			children = (
+				679B225A2450FCF9007653BD /* main.c */,
+			);
+			path = "KMP算法";
 			sourceTree = "<group>";
 		};
 		67A59B742441A4820015AE7E /* 线性表练习题 */ = {
@@ -567,6 +596,23 @@
 			productReference = 6766CEC5244DFC0600DFBEA1 /* 去除重复字母 */;
 			productType = "com.apple.product-type.tool";
 		};
+		679B22572450FCF9007653BD /* KMP算法 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 679B225E2450FCF9007653BD /* Build configuration list for PBXNativeTarget "KMP算法" */;
+			buildPhases = (
+				679B22542450FCF9007653BD /* Sources */,
+				679B22552450FCF9007653BD /* Frameworks */,
+				679B22562450FCF9007653BD /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "KMP算法";
+			productName = "KMP算法";
+			productReference = 679B22582450FCF9007653BD /* KMP算法 */;
+			productType = "com.apple.product-type.tool";
+		};
 		67A59B722441A4820015AE7E /* 线性表练习题 */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 67A59B792441A4820015AE7E /* Build configuration list for PBXNativeTarget "线性表练习题" */;
@@ -702,6 +748,9 @@
 					6766CEC4244DFC0600DFBEA1 = {
 						CreatedOnToolsVersion = 10.3;
 					};
+					679B22572450FCF9007653BD = {
+						CreatedOnToolsVersion = 10.3;
+					};
 					67A59B722441A4820015AE7E = {
 						CreatedOnToolsVersion = 10.3;
 					};
@@ -748,6 +797,7 @@
 				675D7F302447428300F77772 /* 算法题 */,
 				6766CEC4244DFC0600DFBEA1 /* 去除重复字母 */,
 				67D448D0244F3B380084F9DC /* 字符串匹配 */,
+				679B22572450FCF9007653BD /* KMP算法 */,
 			);
 		};
 /* End PBXProject section */
@@ -813,6 +863,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				6766CEC8244DFC0600DFBEA1 /* main.c in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		679B22542450FCF9007653BD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				679B225B2450FCF9007653BD /* main.c in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1106,6 +1164,22 @@
 			};
 			name = Release;
 		};
+		679B225C2450FCF9007653BD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		679B225D2450FCF9007653BD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
 		67A59B772441A4820015AE7E /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -1282,6 +1356,15 @@
 			buildConfigurations = (
 				6766CEC9244DFC0600DFBEA1 /* Debug */,
 				6766CECA244DFC0600DFBEA1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		679B225E2450FCF9007653BD /* Build configuration list for PBXNativeTarget "KMP算法" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				679B225C2450FCF9007653BD /* Debug */,
+				679B225D2450FCF9007653BD /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
