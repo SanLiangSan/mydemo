@@ -66,8 +66,8 @@ void get_next(String T,int *next){
     while (j < T[0]) {
         //printf("i = %d j = %d\n",i,j);
         if(i ==0 || T[i] == T[j]){
-            //T[i] 表示后缀的单个字符;
-            //T[j] 表示前缀的单个字符;
+            //T[i] 表示前缀的单个字符;
+            //T[j] 表示后缀的单个字符;
             ++i;
             ++j;
             next[j] = i;
@@ -202,45 +202,45 @@ int main(int argc, const char * argv[]) {
     get_next(s1,p);
     printf("Next为: ");
     NextPrint(p,StrLength(s1));
-    t=(int*)malloc((i+1)*sizeof(int));
-    get_nextVal(s1, t);
-    printf("NextVal为: ");
-    NextPrint(t,StrLength(s1));
-    printf("\n");
+//    t=(int*)malloc((i+1)*sizeof(int));
+//    get_nextVal(s1, t);
+//    printf("NextVal为: ");
+//    NextPrint(t,StrLength(s1));
+//    printf("\n");
     
     //KMP算法调用
-    StrAssign(s1,"abcababca");
-    printf("主串为: ");
-    StrPrint(s1);
-    StrAssign(s2,"abcdex");
-    printf("子串为: ");
-    StrPrint(s2);
-    Status = Index_KMP(s1,s2,1);
-    printf("主串和子串在第%d个字符处首次匹配（KMP算法）[返回位置为负数表示没有匹配] \n",Status);
-    Status = Index_KMP2(s1, s2, 1);
-    printf("主串和子串在第%d个字符处首次匹配（KMP_2算法）[返回位置为负数表示没有匹配] \n\n",Status);
-    
-    StrAssign(s1,"abccabcceabc");
-    printf("主串为: ");
-    StrPrint(s1);
-    StrAssign(s2,"abcce");
-    printf("子串为: ");
-    StrPrint(s2);
-    Status = Index_KMP(s1,s2,1);
-    printf("主串和子串在第%d个字符处首次匹配（KMP算法）[返回位置为负数表示没有匹配] \n",Status);
-    Status = Index_KMP2(s1, s2, 1);
-    printf("主串和子串在第%d个字符处首次匹配（KMP_2算法）[返回位置为负数表示没有匹配] \n\n",Status);
-    
-    StrAssign(s1,"aaaabcde");
-    printf("主串为: ");
-    StrPrint(s1);
-    StrAssign(s2,"aaaaax");
-    printf("子串为: ");
-    StrPrint(s2);
-    Status = Index_KMP(s1,s2,1);
-    printf("主串和子串在第%d个字符处首次匹配（KMP算法）[返回位置为负数表示没有匹配] \n",Status);
-    Status = Index_KMP2(s1, s2, 1);
-    printf("主串和子串在第%d个字符处首次匹配（KMP_2算法）[返回位置为负数表示没有匹配] \n\n",Status);
+//    StrAssign(s1,"abcababca");
+//    printf("主串为: ");
+//    StrPrint(s1);
+//    StrAssign(s2,"abcdex");
+//    printf("子串为: ");
+//    StrPrint(s2);
+//    Status = Index_KMP(s1,s2,1);
+//    printf("主串和子串在第%d个字符处首次匹配（KMP算法）[返回位置为负数表示没有匹配] \n",Status);
+//    Status = Index_KMP2(s1, s2, 1);
+//    printf("主串和子串在第%d个字符处首次匹配（KMP_2算法）[返回位置为负数表示没有匹配] \n\n",Status);
+//
+//    StrAssign(s1,"abccabcceabc");
+//    printf("主串为: ");
+//    StrPrint(s1);
+//    StrAssign(s2,"abcce");
+//    printf("子串为: ");
+//    StrPrint(s2);
+//    Status = Index_KMP(s1,s2,1);
+//    printf("主串和子串在第%d个字符处首次匹配（KMP算法）[返回位置为负数表示没有匹配] \n",Status);
+//    Status = Index_KMP2(s1, s2, 1);
+//    printf("主串和子串在第%d个字符处首次匹配（KMP_2算法）[返回位置为负数表示没有匹配] \n\n",Status);
+//
+//    StrAssign(s1,"aaaabcde");
+//    printf("主串为: ");
+//    StrPrint(s1);
+//    StrAssign(s2,"aaaaax");
+//    printf("子串为: ");
+//    StrPrint(s2);
+//    Status = Index_KMP(s1,s2,1);
+//    printf("主串和子串在第%d个字符处首次匹配（KMP算法）[返回位置为负数表示没有匹配] \n",Status);
+//    Status = Index_KMP2(s1, s2, 1);
+//    printf("主串和子串在第%d个字符处首次匹配（KMP_2算法）[返回位置为负数表示没有匹配] \n\n",Status);
     
     
     return 0;
