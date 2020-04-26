@@ -140,8 +140,8 @@ void CengOrder(BiTree tree) {
     InitQueue(&q);
     QueueEnter(&q, tree);
     Data ctree;
-    GetHead(q, &ctree);
     while (!IsEmpty(q)) {
+        GetHead(q, &ctree);
         printf("%c - ",ctree->data);
         Data head;
         QueuePop(&q, &head);
@@ -151,7 +151,6 @@ void CengOrder(BiTree tree) {
         if (head->rightNode) {
             QueueEnter(&q, head->rightNode);
         }
-        GetHead(q, &ctree);
     }
 }
 
